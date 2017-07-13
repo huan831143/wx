@@ -1,0 +1,31 @@
+.inp{
+  color: #cacaca
+}
+.login{
+  padding-top:18px ;
+  width: 90%;
+  margin: 0 auto;
+  height: auto
+}
+
+
+input{
+  height: 44px;
+  margin-bottom: 14px;
+  border-bottom:solid 1px #7f7f7f;
+}
+.btn{
+  background: #0dc441;
+  color: #fff;
+}
+.zc{
+  color: #999999;
+  font-size: 14px;
+  margin:26px 0 ;
+  display: flex;
+}
+.zc navigator{
+  margin-left:2px ;
+  color: #a3e9b7;
+  text-decoration: underline;
+}

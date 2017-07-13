@@ -1,0 +1,11 @@
+<view class="login">
+<form>
+  <input bindinput="handleName" type="number" placeholder="手机号" class="phon" placeholder-class="inp"/>
+  <input bindinput="handlePwd" type="password" placeholder="密码" class="pass" placeholder-class="inp"/>
+  <view class="zc">
+    还没有账号？点击此处立即<navigator url="../regist/regist">注册</navigator>
+  </view>
+  <button class="btn" bindtap="submit">提  交</button>
+</form>
+
+</view>

@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<!--nav-->
+<view class="nav">
+  <view class="flex-wrp">
+    <view class="flex-item {{currentTab===0 ? 'active' : ''}}" data-current="0" bindtap="claChange">足球现场</view>
+    <view class="flex-item {{currentTab===1 ? 'active' : ''}}" data-current="1" bindtap="claChange">足球生活</view>
+    <view class="flex-item {{currentTab===2 ? 'active' : ''}}" data-current="2" bindtap="claChange">足球美女</view>
+  </view>
+</view>
+<!--swiper-->
+<swiper duration="1000" current="{{currentTab}}" bindchange="change">
+     <swiper-item class="locale">
+         <block wx:for="{{locale}}" wx:for-item="l">
+            <view class="imgbox">
+               <image src="{{l.imgs}}" class="image"/>
+               <text>{{l.texts}}</text>
+            </view>
+          </block> 
+    </swiper-item>
+     <swiper-item class="life">
+         <block wx:for="{{life}}" wx:for-item="li">
+            <view class="imgbox">
+               <image src="{{li.imgs}}" class="image"/>
+               <text>{{li.texts}}</text>
+            </view>
+          </block> 
+    </swiper-item>
+     <swiper-item class="mn">
+         <block wx:for="{{locale}}" wx:for-item="l">
+            <view class="imgbox">
+               <image src="{{l.imgs}}" class="image"/>
+               <text>{{l.texts}}</text>
+            </view>
+          </block> 
+    </swiper-item>
+</swiper>
+  <!--footer-->
+   <view class="footer">
+      <view class="link linkactive">
+        <image class="icon" src="../../imgs/1.png"></image>
+        首页
+      </view>
+      <view class="link">
+        <image class="icon" src="../../imgs/2.png"></image>
+        发现
+      </view>    
+        <view class="xj">      
+        
+      </view>   
+        <navigator url="../loging/loging" hover-class="navigator-hover" class="link">
+        <image class="icon" src="../../imgs/3.png"></image>  
+        我的      
+      </navigator>   
+        <view class="link">
+        <image class="icon" src="../../imgs/4.png"></image>
+        退出
+      </view>    
+  </view>
